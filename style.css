@@ -190,6 +190,10 @@ body {
   border: none;
 }
 
+.slider button:last-child {
+  white-space: nowrap;
+}
+
 
 
 /* content */
@@ -303,4 +307,28 @@ body {
 .title {
   font-size: 10px;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .slider, .middle-section {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 100px;
+    padding-top: 8px;
+    flex-shrink: 1;
+  }
+  .header {
+    height: 70px;
+  }
+
+  .grid-content {
+    margin-top: 0px;
+  }
+  .right-section {
+    min-width: 0;
+  }
 }
