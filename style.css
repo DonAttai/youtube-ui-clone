@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -14,9 +14,6 @@ body {
   grid-template-rows: 70px 1fr;
 }
 
-
-
-
 /* header */
 .header {
   display: flex;
@@ -27,7 +24,7 @@ body {
   left: 0;
   right: 0;
   background-color: white;
-  height: 120px;
+  min-height: 120px;
   z-index: 5;
   border-bottom: 1px solid gray;
   opacity: 0.99;
@@ -37,7 +34,6 @@ body {
   display: flex;
   margin-top: 10px;
   margin-bottom: 3px;
-  
 }
 
 .left-section {
@@ -45,8 +41,8 @@ body {
   align-items: center;
   width: 162;
   padding-left: 5px;
-  }
-  
+}
+
 .hamburger-menu {
   height: 24px;
   margin-left: 20px;
@@ -75,7 +71,8 @@ body {
   padding-left: 30px;
 }
 
-.search-button, .voice-search-button{
+.search-button,
+.voice-search-button {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -87,7 +84,8 @@ body {
   margin-left: -2px;
   cursor: pointer;
 }
-.search-button .tooltip, .voice-search-button .tooltip {
+.search-button .tooltip,
+.voice-search-button .tooltip {
   position: absolute;
   bottom: -30px;
   background-color: gray;
@@ -99,8 +97,9 @@ body {
   white-space: nowrap;
 }
 
-.search-button:hover .tooltip, .voice-search-button:hover .tooltip{
-  opacity: 1
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+  opacity: 1;
 }
 .search-box {
   height: 18px;
@@ -117,8 +116,6 @@ body {
   font-size: 16px;
 }
 
-
-
 .voice-search-button {
   height: 40px;
   width: 40px;
@@ -126,10 +123,10 @@ body {
   border-radius: 50%;
   border: none;
 }
-.search-icon{
+.search-icon {
   height: 24px;
 }
-.voice-search-icon{
+.voice-search-icon {
   height: 24px;
 }
 
@@ -141,7 +138,9 @@ body {
   flex-shrink: 0;
   margin-left: 10px;
 }
-.upload-icon, .youtube-apps-icon, .notifications-icon {
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
   height: 24px;
   cursor: pointer;
 }
@@ -163,7 +162,7 @@ body {
   margin-left: 20px;
 }
 
-.user-picture{
+.user-picture {
   height: 36px;
   cursor: pointer;
   border-radius: 50%;
@@ -171,11 +170,13 @@ body {
 
 .slider {
   display: flex;
-  padding-left: 100px;
+  padding: 10px 0 10px 100px;
+
   border-top: 1px solid gray;
   align-items: center;
   margin-top: 3px;
   height: 100%;
+  /* background-color: red; */
 }
 .slider button {
   padding: 8px 12px;
@@ -193,8 +194,6 @@ body {
 .slider button:last-child {
   white-space: nowrap;
 }
-
-
 
 /* content */
 
@@ -241,7 +240,6 @@ body {
   font-size: 0.7em;
   line-height: 20px;
   font-weight: 600;
-
 }
 
 .video-author {
@@ -250,7 +248,7 @@ body {
   padding-bottom: 5px;
 }
 
-.video-stats{
+.video-stats {
   font-size: 00.65em;
 }
 
@@ -309,9 +307,9 @@ body {
   text-align: center;
 }
 
-
 @media only screen and (max-width: 600px) {
-  .slider, .middle-section {
+  .slider,
+  .middle-section {
     display: none;
   }
 
